@@ -173,9 +173,13 @@ RaicomProgram vserion2/
 
 本项目采用MIT许可证。
 
+## 数据集来源
+
+https://aistudio.baidu.com/datasetdetail/212686?login_type
+
 ## 🙏 致谢
 
-感谢所有为这个项目做出贡献的开发者和研究人员。特别感谢PyTorch、OpenCV和其他开源库的贡献者，没有他们的努力，这个项目是不可能完成的。
+感谢所有为这个项目做出贡献的开发者和研究人员。特别感谢PyTorch、OpenCV和其他开源库的贡献者和数据集提供者：CIROBOT330 飞桨用户，没有他们的努力，这个项目是不可能完成的。
 
 ## 📧 联系方式
 
