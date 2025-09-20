@@ -1,0 +1,112 @@
+2025-09-20 18:56:17,279 - INFO - 使用中文字体: Microsoft YaHei
+2025-09-20 18:56:17,282 - INFO - 加载 13 个类别
+2025-09-20 18:56:17,530 - INFO - 初始化多标签分类模型，类别数: 13
+2025-09-20 18:56:17,695 - INFO - 成功加载模型: best_model.pth
+2025-09-20 18:56:49,030 - INFO - 结果已保存至: F:\RaicomProgram version1\output_voc\JPEGImages\image_00000_result.jpg
+2025-09-20 19:02:43,419 - INFO - 使用中文字体: Microsoft YaHei
+2025-09-20 19:02:43,419 - INFO - 加载 13 个类别
+2025-09-20 19:02:43,660 - INFO - 初始化多标签分类模型，类别数: 13
+2025-09-20 19:02:43,814 - INFO - 成功加载模型: best_model.pth
+2025-09-20 19:05:27,599 - INFO - 开始批量处理 2100 张图像
+2025-09-20 19:05:29,029 - INFO - 结果已保存至: F:\imgs\JPEGImages\image_00000_result.jpg
+2025-09-20 19:05:29,091 - INFO - 结果已保存至: F:\imgs\JPEGImages\image_00001_result.jpg
+2025-09-20 19:05:29,141 - INFO - 结果已保存至: F:\imgs\JPEGImages\image_00002_result.jpg
+2025-09-20 19:05:29,200 - INFO - 结果已保存至: F:\imgs\JPEGImages\image_00003_result.jpg
+2025-09-20 19:05:29,250 - INFO - 结果已保存至: F:\imgs\JPEGImages\image_00004_result.jpg
+2025-09-20 19:05:29,327 - INFO - 结果已保存至: F:\imgs\JPEGImages\image_00005_result.jpg
+2025-09-20 19:05:29,379 - INFO - 结果已保存至: F:\imgs\JPEGImages\image_00006_result.jpg
+2025-09-20 19:05:29,442 - INFO - 结果已保存至: F:\imgs\JPEGImages\image_00007_result.jpg
+2025-09-20 19:05:29,502 - INFO - 结果已保存至: F:\imgs\JPEGImages\image_00008_result.jpg
+2025-09-20 19:05:29,564 - INFO - 结果已保存至: F:\imgs\JPEGImages\image_00009_result.jpg
+2025-09-20 19:05:32,859 - INFO - 结果已保存至: F:\imgs\JPEGImages\image_00010_result.jpg
+2025-09-20 19:05:36,691 - INFO - 结果已保存至: F:\imgs\JPEGImages\image_00011_result.jpg
+2025-09-20 19:05:36,754 - INFO - 结果已保存至: F:\imgs\JPEGImages\image_00012_result.jpg
+2025-09-20 19:05:36,814 - INFO - 结果已保存至: F:\imgs\JPEGImages\image_00013_result.jpg
+2025-09-20 19:05:36,880 - INFO - 结果已保存至: F:\imgs\JPEGImages\image_00014_result.jpg
+2025-09-20 19:05:36,941 - INFO - 结果已保存至: F:\imgs\JPEGImages\image_00015_result.jpg
+2025-09-20 19:05:37,003 - INFO - 结果已保存至: F:\imgs\JPEGImages\image_00016_result.jpg
+2025-09-20 19:05:37,069 - INFO - 结果已保存至: F:\imgs\JPEGImages\image_00017_result.jpg
+2025-09-20 19:05:37,129 - INFO - 结果已保存至: F:\imgs\JPEGImages\image_00018_result.jpg
+2025-09-20 19:05:37,189 - INFO - 结果已保存至: F:\imgs\JPEGImages\image_00019_result.jpg
+2025-09-20 19:05:37,249 - INFO - 结果已保存至: F:\imgs\JPEGImages\image_00020_result.jpg
+2025-09-20 19:05:37,322 - INFO - 结果已保存至: F:\imgs\JPEGImages\image_00021_result.jpg
+2025-09-20 19:05:37,389 - INFO - 结果已保存至: F:\imgs\JPEGImages\image_00022_result.jpg
+2025-09-20 19:05:40,663 - INFO - 结果已保存至: F:\imgs\JPEGImages\image_00023_result.jpg
+2025-09-20 19:05:41,274 - INFO - 结果已保存至: F:\imgs\JPEGImages\image_00024_result.jpg
+2025-09-20 19:05:41,334 - INFO - 结果已保存至: F:\imgs\JPEGImages\image_00025_result.jpg
+2025-09-20 19:05:45,220 - INFO - 结果已保存至: F:\imgs\JPEGImages\image_00026_result.jpg
+2025-09-20 19:05:45,289 - INFO - 结果已保存至: F:\imgs\JPEGImages\image_00027_result.jpg
+2025-09-20 19:05:45,370 - INFO - 结果已保存至: F:\imgs\JPEGImages\image_00028_result.jpg
+2025-09-20 19:05:45,429 - INFO - 结果已保存至: F:\imgs\JPEGImages\image_00029_result.jpg
+2025-09-20 19:05:45,521 - INFO - 结果已保存至: F:\imgs\JPEGImages\image_00030_result.jpg
+2025-09-20 19:05:45,739 - INFO - 结果已保存至: F:\imgs\JPEGImages\image_00031_result.jpg
+2025-09-20 19:05:45,928 - INFO - 结果已保存至: F:\imgs\JPEGImages\image_00032_result.jpg
+2025-09-20 19:05:47,209 - INFO - 结果已保存至: F:\imgs\JPEGImages\image_00033_result.jpg
+2025-09-20 19:05:52,289 - INFO - 结果已保存至: F:\imgs\JPEGImages\image_00034_result.jpg
+2025-09-20 19:05:55,760 - INFO - 结果已保存至: F:\imgs\JPEGImages\image_00035_result.jpg
+2025-09-20 19:06:00,309 - INFO - 结果已保存至: F:\imgs\JPEGImages\image_00036_result.jpg
+2025-09-20 19:06:04,294 - INFO - 结果已保存至: F:\imgs\JPEGImages\image_00037_result.jpg
+2025-09-20 19:06:04,529 - INFO - 结果已保存至: F:\imgs\JPEGImages\image_00038_result.jpg
+2025-09-20 19:06:04,759 - INFO - 结果已保存至: F:\imgs\JPEGImages\image_00039_result.jpg
+2025-09-20 19:06:05,079 - INFO - 结果已保存至: F:\imgs\JPEGImages\image_00040_result.jpg
+2025-09-20 19:06:07,989 - INFO - 结果已保存至: F:\imgs\JPEGImages\image_00041_result.jpg
+2025-09-20 19:06:08,829 - INFO - 结果已保存至: F:\imgs\JPEGImages\image_00042_result.jpg
+2025-09-20 19:06:09,069 - INFO - 结果已保存至: F:\imgs\JPEGImages\image_00043_result.jpg
+2025-09-20 19:06:11,464 - INFO - 结果已保存至: F:\imgs\JPEGImages\image_00044_result.jpg
+2025-09-20 19:06:15,961 - INFO - 结果已保存至: F:\imgs\JPEGImages\image_00045_result.jpg
+2025-09-20 19:06:19,974 - INFO - 结果已保存至: F:\imgs\JPEGImages\image_00046_result.jpg
+2025-09-20 19:06:23,459 - INFO - 结果已保存至: F:\imgs\JPEGImages\image_00047_result.jpg
+2025-09-20 19:06:27,959 - INFO - 结果已保存至: F:\imgs\JPEGImages\image_00048_result.jpg
+2025-09-20 19:06:28,119 - INFO - 结果已保存至: F:\imgs\JPEGImages\image_00049_result.jpg
+2025-09-20 19:06:28,279 - INFO - 结果已保存至: F:\imgs\JPEGImages\image_00050_result.jpg
+2025-09-20 19:06:30,049 - INFO - 结果已保存至: F:\imgs\JPEGImages\image_00051_result.jpg
+2025-09-20 19:06:33,979 - INFO - 结果已保存至: F:\imgs\JPEGImages\image_00052_result.jpg
+2025-09-20 19:06:34,603 - INFO - 结果已保存至: F:\imgs\JPEGImages\image_00053_result.jpg
+2025-09-20 19:06:34,669 - INFO - 结果已保存至: F:\imgs\JPEGImages\image_00054_result.jpg
+2025-09-20 19:06:34,739 - INFO - 结果已保存至: F:\imgs\JPEGImages\image_00055_result.jpg
+2025-09-20 19:06:34,813 - INFO - 结果已保存至: F:\imgs\JPEGImages\image_00056_result.jpg
+2025-09-20 19:06:34,879 - INFO - 结果已保存至: F:\imgs\JPEGImages\image_00057_result.jpg
+2025-09-20 19:06:34,949 - INFO - 结果已保存至: F:\imgs\JPEGImages\image_00058_result.jpg
+2025-09-20 19:06:35,014 - INFO - 结果已保存至: F:\imgs\JPEGImages\image_00059_result.jpg
+2025-09-20 19:06:35,092 - INFO - 结果已保存至: F:\imgs\JPEGImages\image_00060_result.jpg
+2025-09-20 19:06:35,171 - INFO - 结果已保存至: F:\imgs\JPEGImages\image_00061_result.jpg
+2025-09-20 19:06:37,389 - INFO - 结果已保存至: F:\imgs\JPEGImages\image_00062_result.jpg
+2025-09-20 19:06:40,129 - INFO - 结果已保存至: F:\imgs\JPEGImages\image_00063_result.jpg
+2025-09-20 19:06:43,961 - INFO - 结果已保存至: F:\imgs\JPEGImages\image_00064_result.jpg
+2025-09-20 19:06:44,029 - INFO - 结果已保存至: F:\imgs\JPEGImages\image_00065_result.jpg
+2025-09-20 19:06:44,092 - INFO - 结果已保存至: F:\imgs\JPEGImages\image_00066_result.jpg
+2025-09-20 19:06:44,151 - INFO - 结果已保存至: F:\imgs\JPEGImages\image_00067_result.jpg
+2025-09-20 19:06:44,221 - INFO - 结果已保存至: F:\imgs\JPEGImages\image_00068_result.jpg
+2025-09-20 19:06:44,290 - INFO - 结果已保存至: F:\imgs\JPEGImages\image_00069_result.jpg
+2025-09-20 19:06:44,359 - INFO - 结果已保存至: F:\imgs\JPEGImages\image_00070_result.jpg
+2025-09-20 19:06:44,432 - INFO - 结果已保存至: F:\imgs\JPEGImages\image_00071_result.jpg
+2025-09-20 19:06:44,499 - INFO - 结果已保存至: F:\imgs\JPEGImages\image_00072_result.jpg
+2025-09-20 19:06:44,563 - INFO - 结果已保存至: F:\imgs\JPEGImages\image_00073_result.jpg
+2025-09-20 19:06:44,635 - INFO - 结果已保存至: F:\imgs\JPEGImages\image_00074_result.jpg
+2025-09-20 19:06:44,699 - INFO - 结果已保存至: F:\imgs\JPEGImages\image_00075_result.jpg
+2025-09-20 19:06:47,459 - INFO - 结果已保存至: F:\imgs\JPEGImages\image_00076_result.jpg
+2025-09-20 19:06:51,019 - INFO - 结果已保存至: F:\imgs\JPEGImages\image_00077_result.jpg
+2025-09-20 19:07:38,189 - INFO - ===== 零件检测系统启动 =====
+2025-09-20 19:07:38,200 - INFO - 加载 13 个类别
+2025-09-20 19:07:38,539 - INFO - 模型加载成功
+2025-09-20 19:07:38,539 - ERROR - 检测 test.jpg 失败: 无法读取图像: test.jpg
+2025-09-20 19:13:08,659 - INFO - ===== 零件检测系统 =====
+2025-09-20 19:13:08,666 - INFO - 加载 13 个类别
+2025-09-20 19:13:09,027 - INFO - 模型加载成功
+2025-09-20 19:13:40,351 - ERROR - 单张图像检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\highgui\src\window.cpp:1301: error: (-2:Unspecified error) The function is not implemented. Rebuild the library with Windows, GTK+ 2.x or Cocoa support. If you are on Ubuntu or Debian, install libgtk2.0-dev and pkg-config, then re-run cmake or configure script in function 'cvShowImage'
+
+2025-09-20 19:14:55,509 - INFO - 程序退出
+2025-09-20 19:15:06,828 - INFO - ===== 零件检测系统 =====
+2025-09-20 19:15:06,828 - INFO - 加载 13 个类别
+2025-09-20 19:15:07,193 - INFO - 模型加载成功
+2025-09-20 19:15:22,572 - ERROR - 单张图像检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\highgui\src\window.cpp:1301: error: (-2:Unspecified error) The function is not implemented. Rebuild the library with Windows, GTK+ 2.x or Cocoa support. If you are on Ubuntu or Debian, install libgtk2.0-dev and pkg-config, then re-run cmake or configure script in function 'cvShowImage'
+
+2025-09-20 19:15:45,128 - INFO - ===== 零件检测系统 =====
+2025-09-20 19:15:45,138 - INFO - 加载 13 个类别
+2025-09-20 19:15:45,501 - INFO - 模型加载成功
+2025-09-20 19:16:06,458 - INFO - 检测完成，结果已保存至: F:\imgs\JPEGImages\image_00005_result.jpg
+2025-09-20 19:18:44,658 - INFO - 使用中文字体: Microsoft YaHei
+2025-09-20 19:18:44,668 - INFO - 加载 13 个类别
+2025-09-20 19:18:44,908 - INFO - 初始化多标签分类模型，类别数: 13
+2025-09-20 19:18:45,063 - INFO - 成功加载模型: best_model.pth
+2025-09-20 19:19:06,077 - INFO - 结果已保存至: F:\imgs\JPEGImages\image_00005_result.jpg

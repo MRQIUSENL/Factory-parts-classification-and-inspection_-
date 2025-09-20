@@ -1,0 +1,1233 @@
+2025-09-20 13:56:51,203 - ERROR - 构建数据增强失败: 1 validation error for InitSchema
+size
+  Field required [type=missing, input_value={'scale': (0.7, 1.0), 'ra...': 1.0, 'strict': False}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/missing
+2025-09-20 13:56:51,203 - ERROR - 程序运行失败: 1 validation error for InitSchema
+size
+  Field required [type=missing, input_value={'scale': (0.7, 1.0), 'ra...': 1.0, 'strict': False}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/missing
+Traceback (most recent call last):
+  File "C:\Users\28015\AppData\Local\Programs\Python\Python312\Lib\site-packages\albumentations\core\validation.py", line 67, in _validate_parameters
+    config = schema_cls(**schema_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\28015\AppData\Local\Programs\Python\Python312\Lib\site-packages\pydantic\main.py", line 253, in __init__
+    validated_self = self.__pydantic_validator__.validate_python(data, self_instance=self)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+pydantic_core._pydantic_core.ValidationError: 1 validation error for InitSchema
+size
+  Field required [type=missing, input_value={'scale': (0.7, 1.0), 'ra...': 1.0, 'strict': False}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/missing
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "d:\Raicom\part_recognition\part_recognition.py", line 313, in main
+    train_transform, test_transform = build_transforms()
+                                      ^^^^^^^^^^^^^^^^^^
+  File "d:\Raicom\part_recognition\part_recognition.py", line 45, in build_transforms
+    A.RandomResizedCrop(
+  File "C:\Users\28015\AppData\Local\Programs\Python\Python312\Lib\site-packages\albumentations\core\validation.py", line 105, in custom_init
+    validated_kwargs = cls._validate_parameters(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\28015\AppData\Local\Programs\Python\Python312\Lib\site-packages\albumentations\core\validation.py", line 71, in _validate_parameters
+    raise ValueError(str(e)) from e
+ValueError: 1 validation error for InitSchema
+size
+  Field required [type=missing, input_value={'scale': (0.7, 1.0), 'ra...': 1.0, 'strict': False}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/missing
+2025-09-20 13:58:33,973 - INFO - 成功加载 2100 个样本，包含 13 个类别
+2025-09-20 13:58:34,283 - INFO - 成功加载 2100 个样本，包含 13 个类别
+2025-09-20 13:58:44,193 - INFO - 初始化模型，分类数: 13
+2025-09-20 13:59:54,098 - INFO - 验证准确率: 39.52%
+2025-09-20 13:59:54,193 - INFO - 新最佳准确率: 39.52%
+2025-09-20 14:00:55,242 - INFO - 验证准确率: 51.95%
+2025-09-20 14:00:55,334 - INFO - 新最佳准确率: 51.95%
+2025-09-20 14:01:57,032 - INFO - 验证准确率: 56.71%
+2025-09-20 14:01:57,126 - INFO - 新最佳准确率: 56.71%
+2025-09-20 14:02:59,852 - INFO - 验证准确率: 58.76%
+2025-09-20 14:02:59,955 - INFO - 新最佳准确率: 58.76%
+2025-09-20 14:04:02,712 - INFO - 验证准确率: 65.10%
+2025-09-20 14:04:02,822 - INFO - 新最佳准确率: 65.10%
+2025-09-20 14:05:08,335 - INFO - 验证准确率: 65.95%
+2025-09-20 14:05:08,450 - INFO - 新最佳准确率: 65.95%
+2025-09-20 14:06:12,282 - INFO - 验证准确率: 66.67%
+2025-09-20 14:06:12,372 - INFO - 新最佳准确率: 66.67%
+2025-09-20 14:07:16,512 - INFO - 验证准确率: 72.86%
+2025-09-20 14:07:16,621 - INFO - 新最佳准确率: 72.86%
+2025-09-20 14:08:21,252 - INFO - 验证准确率: 68.24%
+2025-09-20 14:09:25,036 - INFO - 验证准确率: 73.71%
+2025-09-20 14:09:25,144 - INFO - 新最佳准确率: 73.71%
+2025-09-20 14:10:29,242 - INFO - 验证准确率: 75.67%
+2025-09-20 14:10:29,348 - INFO - 新最佳准确率: 75.67%
+2025-09-20 14:11:32,921 - INFO - 验证准确率: 79.38%
+2025-09-20 14:11:33,028 - INFO - 新最佳准确率: 79.38%
+2025-09-20 14:12:37,211 - INFO - 验证准确率: 76.05%
+2025-09-20 14:13:40,962 - INFO - 验证准确率: 77.81%
+2025-09-20 14:14:44,756 - INFO - 验证准确率: 82.05%
+2025-09-20 14:14:44,861 - INFO - 新最佳准确率: 82.05%
+2025-09-20 14:15:49,581 - INFO - 验证准确率: 83.86%
+2025-09-20 14:15:49,691 - INFO - 新最佳准确率: 83.86%
+2025-09-20 14:16:53,776 - INFO - 验证准确率: 81.38%
+2025-09-20 14:17:57,442 - INFO - 验证准确率: 80.95%
+2025-09-20 14:19:01,241 - INFO - 验证准确率: 83.05%
+2025-09-20 14:20:04,545 - INFO - 验证准确率: 91.57%
+2025-09-20 14:20:04,642 - INFO - 新最佳准确率: 91.57%
+2025-09-20 14:21:07,930 - INFO - 验证准确率: 92.43%
+2025-09-20 14:21:08,034 - INFO - 新最佳准确率: 92.43%
+2025-09-20 14:22:11,470 - INFO - 验证准确率: 92.95%
+2025-09-20 14:22:11,574 - INFO - 新最佳准确率: 92.95%
+2025-09-20 14:23:14,720 - INFO - 验证准确率: 93.10%
+2025-09-20 14:23:14,811 - INFO - 新最佳准确率: 93.10%
+2025-09-20 14:24:18,126 - INFO - 验证准确率: 94.24%
+2025-09-20 14:24:18,210 - INFO - 新最佳准确率: 94.24%
+2025-09-20 14:25:21,670 - INFO - 验证准确率: 94.24%
+2025-09-20 14:26:26,185 - INFO - 验证准确率: 94.48%
+2025-09-20 14:26:26,293 - INFO - 新最佳准确率: 94.48%
+2025-09-20 14:27:29,770 - INFO - 验证准确率: 94.48%
+2025-09-20 14:28:33,463 - INFO - 验证准确率: 94.43%
+2025-09-20 14:29:38,144 - INFO - 验证准确率: 94.57%
+2025-09-20 14:29:38,250 - INFO - 新最佳准确率: 94.57%
+2025-09-20 14:30:41,689 - INFO - 验证准确率: 95.29%
+2025-09-20 14:30:41,781 - INFO - 新最佳准确率: 95.29%
+2025-09-20 14:31:46,224 - INFO - 验证准确率: 95.62%
+2025-09-20 14:31:46,337 - INFO - 新最佳准确率: 95.62%
+2025-09-20 14:32:50,809 - INFO - 验证准确率: 95.57%
+2025-09-20 14:33:55,374 - INFO - 验证准确率: 95.62%
+2025-09-20 14:35:00,204 - INFO - 验证准确率: 95.81%
+2025-09-20 14:35:00,310 - INFO - 新最佳准确率: 95.81%
+2025-09-20 14:36:03,661 - INFO - 验证准确率: 96.10%
+2025-09-20 14:36:03,763 - INFO - 新最佳准确率: 96.10%
+2025-09-20 14:37:08,713 - INFO - 验证准确率: 96.33%
+2025-09-20 14:37:08,812 - INFO - 新最佳准确率: 96.33%
+2025-09-20 14:38:13,319 - INFO - 验证准确率: 96.29%
+2025-09-20 14:39:19,154 - INFO - 验证准确率: 96.71%
+2025-09-20 14:39:19,260 - INFO - 新最佳准确率: 96.71%
+2025-09-20 14:40:23,588 - INFO - 验证准确率: 96.62%
+2025-09-20 14:41:28,558 - INFO - 验证准确率: 97.14%
+2025-09-20 14:41:28,695 - INFO - 新最佳准确率: 97.14%
+2025-09-20 14:42:33,353 - INFO - 验证准确率: 97.05%
+2025-09-20 14:43:36,928 - INFO - 验证准确率: 97.14%
+2025-09-20 14:44:40,678 - INFO - 验证准确率: 96.90%
+2025-09-20 14:45:45,462 - INFO - 验证准确率: 97.10%
+2025-09-20 14:46:50,062 - INFO - 验证准确率: 97.19%
+2025-09-20 14:46:50,162 - INFO - 新最佳准确率: 97.19%
+2025-09-20 14:47:54,488 - INFO - 验证准确率: 97.10%
+2025-09-20 14:48:58,697 - INFO - 验证准确率: 97.29%
+2025-09-20 14:48:58,789 - INFO - 新最佳准确率: 97.29%
+2025-09-20 14:50:03,428 - INFO - 验证准确率: 97.24%
+2025-09-20 14:51:07,533 - INFO - 验证准确率: 97.33%
+2025-09-20 14:51:07,637 - INFO - 新最佳准确率: 97.33%
+2025-09-20 14:52:12,417 - INFO - 验证准确率: 97.29%
+2025-09-20 14:52:12,911 - INFO - 训练完成，结果已保存
+2025-09-20 17:21:31,418 - INFO - 成功加载 2100 个样本，包含 13 个类别
+2025-09-20 17:21:33,382 - INFO - 成功加载 2100 个样本，包含 13 个类别
+2025-09-20 17:21:33,857 - INFO - 初始化多标签分类模型，类别数: 13
+2025-09-20 17:27:14,223 - INFO - 早停触发，最佳F1分数: 0.0000
+2025-09-20 17:27:15,143 - INFO - 训练完成，结果已保存
+2025-09-20 17:31:08,726 - INFO - 成功加载 2100 个样本，13 个类别
+2025-09-20 17:31:08,790 - INFO - 
+类别分布:
+2025-09-20 17:31:08,800 - INFO - Double hexagonal column: 917
+2025-09-20 17:31:08,800 - INFO - Flange nut: 867
+2025-09-20 17:31:08,801 - INFO - Hexagon nut: 943
+2025-09-20 17:31:08,801 - INFO - Hexagon pillar: 903
+2025-09-20 17:31:08,801 - INFO - Hexagon screw: 895
+2025-09-20 17:31:08,801 - INFO - Hexagonal steel column: 920
+2025-09-20 17:31:08,801 - INFO - Horizontal bubble: 897
+2025-09-20 17:31:08,801 - INFO - Keybar: 945
+2025-09-20 17:31:08,801 - INFO - Plastic cushion pillar: 908
+2025-09-20 17:31:08,801 - INFO - Rectangular nut: 924
+2025-09-20 17:31:08,801 - INFO - Round head screw: 889
+2025-09-20 17:31:08,801 - INFO - Spring washer: 940
+2025-09-20 17:31:08,801 - INFO - T-shaped screw: 910
+2025-09-20 17:31:10,249 - INFO - 成功加载 2100 个样本，13 个类别
+2025-09-20 17:31:10,322 - INFO - 
+类别分布:
+2025-09-20 17:31:10,322 - INFO - Double hexagonal column: 917
+2025-09-20 17:31:10,322 - INFO - Flange nut: 867
+2025-09-20 17:31:10,322 - INFO - Hexagon nut: 943
+2025-09-20 17:31:10,322 - INFO - Hexagon pillar: 903
+2025-09-20 17:31:10,324 - INFO - Hexagon screw: 895
+2025-09-20 17:31:10,324 - INFO - Hexagonal steel column: 920
+2025-09-20 17:31:10,324 - INFO - Horizontal bubble: 897
+2025-09-20 17:31:10,324 - INFO - Keybar: 945
+2025-09-20 17:31:10,325 - INFO - Plastic cushion pillar: 908
+2025-09-20 17:31:10,325 - INFO - Rectangular nut: 924
+2025-09-20 17:31:10,325 - INFO - Round head screw: 889
+2025-09-20 17:31:10,325 - INFO - Spring washer: 940
+2025-09-20 17:31:10,325 - INFO - T-shaped screw: 910
+2025-09-20 17:31:19,988 - INFO - 初始化多标签分类模型，类别数: 13
+2025-09-20 17:32:46,525 - INFO - 验证损失: 0.6623, F1分数: 0.5837
+2025-09-20 17:32:46,547 - INFO - 
+分类报告:
+                         precision    recall  f1-score   support
+
+Double hexagonal column       0.41      1.00      0.59       871
+             Flange nut       0.39      1.00      0.56       819
+            Hexagon nut       0.43      1.00      0.60       897
+         Hexagon pillar       0.41      1.00      0.58       858
+          Hexagon screw       0.40      1.00      0.58       850
+ Hexagonal steel column       0.42      1.00      0.59       878
+      Horizontal bubble       0.40      1.00      0.58       848
+                 Keybar       0.43      1.00      0.60       898
+ Plastic cushion pillar       0.41      1.00      0.58       864
+        Rectangular nut       0.42      1.00      0.59       878
+       Round head screw       0.40      1.00      0.57       841
+          Spring washer       0.42      1.00      0.59       888
+         T-shaped screw       0.41      1.00      0.58       860
+
+              micro avg       0.41      1.00      0.58     11250
+              macro avg       0.41      1.00      0.58     11250
+           weighted avg       0.41      1.00      0.58     11250
+            samples avg       0.41      1.00      0.57     11250
+
+2025-09-20 17:33:01,626 - INFO - 新最佳F1分数: 0.5837
+2025-09-20 17:33:15,418 - INFO - 成功导出ONNX模型到 model.onnx
+2025-09-20 17:34:43,065 - INFO - 验证损失: 0.5963, F1分数: 0.5837
+2025-09-20 17:34:43,099 - INFO - 
+分类报告:
+                         precision    recall  f1-score   support
+
+Double hexagonal column       0.41      1.00      0.59       871
+             Flange nut       0.39      1.00      0.56       819
+            Hexagon nut       0.43      1.00      0.60       897
+         Hexagon pillar       0.41      1.00      0.58       858
+          Hexagon screw       0.40      1.00      0.58       850
+ Hexagonal steel column       0.42      1.00      0.59       878
+      Horizontal bubble       0.40      1.00      0.58       848
+                 Keybar       0.43      1.00      0.60       898
+ Plastic cushion pillar       0.41      1.00      0.58       864
+        Rectangular nut       0.42      1.00      0.59       878
+       Round head screw       0.40      1.00      0.57       841
+          Spring washer       0.42      1.00      0.59       888
+         T-shaped screw       0.41      1.00      0.58       860
+
+              micro avg       0.41      1.00      0.58     11250
+              macro avg       0.41      1.00      0.58     11250
+           weighted avg       0.41      1.00      0.58     11250
+            samples avg       0.41      1.00      0.57     11250
+
+2025-09-20 17:36:11,417 - INFO - 验证损失: 0.5603, F1分数: 0.5837
+2025-09-20 17:36:11,525 - INFO - 
+分类报告:
+                         precision    recall  f1-score   support
+
+Double hexagonal column       0.41      1.00      0.59       871
+             Flange nut       0.39      1.00      0.56       819
+            Hexagon nut       0.43      1.00      0.60       897
+         Hexagon pillar       0.41      1.00      0.58       858
+          Hexagon screw       0.40      1.00      0.58       850
+ Hexagonal steel column       0.42      1.00      0.59       878
+      Horizontal bubble       0.40      1.00      0.58       848
+                 Keybar       0.43      1.00      0.60       898
+ Plastic cushion pillar       0.41      1.00      0.58       864
+        Rectangular nut       0.42      1.00      0.59       878
+       Round head screw       0.40      1.00      0.57       841
+          Spring washer       0.42      1.00      0.59       888
+         T-shaped screw       0.41      1.00      0.58       860
+
+              micro avg       0.41      1.00      0.58     11250
+              macro avg       0.41      1.00      0.58     11250
+           weighted avg       0.41      1.00      0.58     11250
+            samples avg       0.41      1.00      0.57     11250
+
+2025-09-20 17:36:42,603 - WARNING - 无法加载中文字体: [Errno 2] No such file or directory: 'F:\\RaicomProgram vserion2\\SimHei.ttf'
+2025-09-20 17:36:44,979 - INFO - 成功加载 2100 个样本，13 个类别
+2025-09-20 17:36:45,050 - INFO - 
+类别分布:
+2025-09-20 17:36:45,054 - INFO - Double hexagonal column: 917
+2025-09-20 17:36:45,054 - INFO - Flange nut: 867
+2025-09-20 17:36:45,054 - INFO - Hexagon nut: 943
+2025-09-20 17:36:45,054 - INFO - Hexagon pillar: 903
+2025-09-20 17:36:45,054 - INFO - Hexagon screw: 895
+2025-09-20 17:36:45,054 - INFO - Hexagonal steel column: 920
+2025-09-20 17:36:45,055 - INFO - Horizontal bubble: 897
+2025-09-20 17:36:45,055 - INFO - Keybar: 945
+2025-09-20 17:36:45,055 - INFO - Plastic cushion pillar: 908
+2025-09-20 17:36:45,055 - INFO - Rectangular nut: 924
+2025-09-20 17:36:45,055 - INFO - Round head screw: 889
+2025-09-20 17:36:45,055 - INFO - Spring washer: 940
+2025-09-20 17:36:45,055 - INFO - T-shaped screw: 910
+2025-09-20 17:36:47,069 - INFO - 成功加载 2100 个样本，13 个类别
+2025-09-20 17:36:47,136 - INFO - 
+类别分布:
+2025-09-20 17:36:47,141 - INFO - Double hexagonal column: 917
+2025-09-20 17:36:47,141 - INFO - Flange nut: 867
+2025-09-20 17:36:47,141 - INFO - Hexagon nut: 943
+2025-09-20 17:36:47,141 - INFO - Hexagon pillar: 903
+2025-09-20 17:36:47,141 - INFO - Hexagon screw: 895
+2025-09-20 17:36:47,141 - INFO - Hexagonal steel column: 920
+2025-09-20 17:36:47,141 - INFO - Horizontal bubble: 897
+2025-09-20 17:36:47,141 - INFO - Keybar: 945
+2025-09-20 17:36:47,141 - INFO - Plastic cushion pillar: 908
+2025-09-20 17:36:47,141 - INFO - Rectangular nut: 924
+2025-09-20 17:36:47,141 - INFO - Round head screw: 889
+2025-09-20 17:36:47,141 - INFO - Spring washer: 940
+2025-09-20 17:36:47,141 - INFO - T-shaped screw: 910
+2025-09-20 17:36:47,385 - INFO - 初始化多标签分类模型，类别数: 13
+2025-09-20 17:36:51,689 - WARNING - 无法加载中文字体: [Errno 2] No such file or directory: 'F:\\RaicomProgram vserion2\\SimHei.ttf'
+2025-09-20 17:36:55,854 - WARNING - 无法加载中文字体: [Errno 2] No such file or directory: 'F:\\RaicomProgram vserion2\\SimHei.ttf'
+2025-09-20 17:37:00,028 - WARNING - 无法加载中文字体: [Errno 2] No such file or directory: 'F:\\RaicomProgram vserion2\\SimHei.ttf'
+2025-09-20 17:37:04,679 - WARNING - 无法加载中文字体: [Errno 2] No such file or directory: 'F:\\RaicomProgram vserion2\\SimHei.ttf'
+2025-09-20 17:37:42,783 - WARNING - 无法加载中文字体: [Errno 2] No such file or directory: 'F:\\RaicomProgram vserion2\\SimHei.ttf'
+2025-09-20 17:37:47,230 - WARNING - 无法加载中文字体: [Errno 2] No such file or directory: 'F:\\RaicomProgram vserion2\\SimHei.ttf'
+2025-09-20 17:37:52,071 - WARNING - 无法加载中文字体: [Errno 2] No such file or directory: 'F:\\RaicomProgram vserion2\\SimHei.ttf'
+2025-09-20 17:37:56,967 - WARNING - 无法加载中文字体: [Errno 2] No such file or directory: 'F:\\RaicomProgram vserion2\\SimHei.ttf'
+2025-09-20 17:38:18,422 - INFO - 
+最佳阈值: 0.57
+分类报告:
+                         precision    recall  f1-score   support
+
+Double hexagonal column       0.66      0.71      0.68       871
+             Flange nut       0.70      0.82      0.76       819
+            Hexagon nut       0.64      0.70      0.67       897
+         Hexagon pillar       0.96      0.97      0.96       858
+          Hexagon screw       0.83      0.79      0.81       850
+ Hexagonal steel column       0.75      0.88      0.81       878
+      Horizontal bubble       1.00      1.00      1.00       848
+                 Keybar       0.62      0.45      0.52       898
+ Plastic cushion pillar       0.62      0.51      0.56       864
+        Rectangular nut       0.71      0.58      0.64       878
+       Round head screw       0.63      0.54      0.58       841
+          Spring washer       0.72      0.81      0.76       888
+         T-shaped screw       0.72      0.60      0.65       860
+
+              micro avg       0.74      0.72      0.73     11250
+              macro avg       0.74      0.72      0.72     11250
+           weighted avg       0.73      0.72      0.72     11250
+            samples avg       0.77      0.67      0.68     11250
+
+2025-09-20 17:38:21,088 - INFO - 验证损失: 0.6584, F1分数: 0.7275
+2025-09-20 17:38:33,813 - INFO - 新最佳F1分数: 0.7275
+2025-09-20 17:38:47,668 - INFO - 成功导出ONNX模型到 model.onnx
+2025-09-20 17:38:52,373 - WARNING - 无法加载中文字体: [Errno 2] No such file or directory: 'F:\\RaicomProgram vserion2\\SimHei.ttf'
+2025-09-20 17:38:57,030 - WARNING - 无法加载中文字体: [Errno 2] No such file or directory: 'F:\\RaicomProgram vserion2\\SimHei.ttf'
+2025-09-20 17:39:01,751 - WARNING - 无法加载中文字体: [Errno 2] No such file or directory: 'F:\\RaicomProgram vserion2\\SimHei.ttf'
+2025-09-20 17:39:06,443 - WARNING - 无法加载中文字体: [Errno 2] No such file or directory: 'F:\\RaicomProgram vserion2\\SimHei.ttf'
+2025-09-20 17:39:46,868 - INFO - 成功加载 2100 个样本，13 个类别
+2025-09-20 17:39:46,939 - INFO - 
+类别分布:
+2025-09-20 17:39:47,407 - INFO - Double hexagonal column: 917
+2025-09-20 17:39:47,407 - INFO - Flange nut: 867
+2025-09-20 17:39:47,407 - INFO - Hexagon nut: 943
+2025-09-20 17:39:47,407 - INFO - Hexagon pillar: 903
+2025-09-20 17:39:47,407 - INFO - Hexagon screw: 895
+2025-09-20 17:39:47,407 - INFO - Hexagonal steel column: 920
+2025-09-20 17:39:47,407 - INFO - Horizontal bubble: 897
+2025-09-20 17:39:47,407 - INFO - Keybar: 945
+2025-09-20 17:39:47,407 - INFO - Plastic cushion pillar: 908
+2025-09-20 17:39:47,407 - INFO - Rectangular nut: 924
+2025-09-20 17:39:47,407 - INFO - Round head screw: 889
+2025-09-20 17:39:47,407 - INFO - Spring washer: 940
+2025-09-20 17:39:47,407 - INFO - T-shaped screw: 910
+2025-09-20 17:39:49,215 - INFO - 成功加载 2100 个样本，13 个类别
+2025-09-20 17:39:49,291 - INFO - 
+类别分布:
+2025-09-20 17:39:49,291 - INFO - Double hexagonal column: 917
+2025-09-20 17:39:49,291 - INFO - Flange nut: 867
+2025-09-20 17:39:49,291 - INFO - Hexagon nut: 943
+2025-09-20 17:39:49,291 - INFO - Hexagon pillar: 903
+2025-09-20 17:39:49,291 - INFO - Hexagon screw: 895
+2025-09-20 17:39:49,291 - INFO - Hexagonal steel column: 920
+2025-09-20 17:39:49,291 - INFO - Horizontal bubble: 897
+2025-09-20 17:39:49,291 - INFO - Keybar: 945
+2025-09-20 17:39:49,291 - INFO - Plastic cushion pillar: 908
+2025-09-20 17:39:49,291 - INFO - Rectangular nut: 924
+2025-09-20 17:39:49,291 - INFO - Round head screw: 889
+2025-09-20 17:39:49,291 - INFO - Spring washer: 940
+2025-09-20 17:39:49,291 - INFO - T-shaped screw: 910
+2025-09-20 17:39:49,534 - INFO - 初始化多标签分类模型，类别数: 13
+2025-09-20 17:41:54,909 - ERROR - 构建数据增强失败: 1 validation error for InitSchema
+size
+  Field required [type=missing, input_value={'scale': (0.6, 1.0), 'ra...': 1.0, 'strict': False}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/missing
+2025-09-20 17:41:54,914 - ERROR - 程序运行失败: 1 validation error for InitSchema
+size
+  Field required [type=missing, input_value={'scale': (0.6, 1.0), 'ra...': 1.0, 'strict': False}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/missing
+Traceback (most recent call last):
+  File "C:\Users\28015\AppData\Local\Programs\Python\Python312\Lib\site-packages\albumentations\core\validation.py", line 67, in _validate_parameters
+    config = schema_cls(**schema_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\28015\AppData\Local\Programs\Python\Python312\Lib\site-packages\pydantic\main.py", line 253, in __init__
+    validated_self = self.__pydantic_validator__.validate_python(data, self_instance=self)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+pydantic_core._pydantic_core.ValidationError: 1 validation error for InitSchema
+size
+  Field required [type=missing, input_value={'scale': (0.6, 1.0), 'ra...': 1.0, 'strict': False}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/missing
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "f:\RaicomProgram vserion2\part_recognition\part_recognition.py", line 503, in main
+    train_transform, test_transform = build_transforms()
+                                      ^^^^^^^^^^^^^^^^^^
+  File "f:\RaicomProgram vserion2\part_recognition\part_recognition.py", line 73, in build_transforms
+    A.RandomResizedCrop(
+  File "C:\Users\28015\AppData\Local\Programs\Python\Python312\Lib\site-packages\albumentations\core\validation.py", line 105, in custom_init
+    validated_kwargs = cls._validate_parameters(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\28015\AppData\Local\Programs\Python\Python312\Lib\site-packages\albumentations\core\validation.py", line 71, in _validate_parameters
+    raise ValueError(str(e)) from e
+ValueError: 1 validation error for InitSchema
+size
+  Field required [type=missing, input_value={'scale': (0.6, 1.0), 'ra...': 1.0, 'strict': False}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/missing
+2025-09-20 17:44:26,624 - INFO - 成功加载 2100 个样本，13 个类别
+2025-09-20 17:44:26,694 - INFO - 
+类别分布:
+2025-09-20 17:44:27,153 - INFO - Double hexagonal column: 917
+2025-09-20 17:44:27,153 - INFO - Flange nut: 867
+2025-09-20 17:44:27,153 - INFO - Hexagon nut: 943
+2025-09-20 17:44:27,153 - INFO - Hexagon pillar: 903
+2025-09-20 17:44:27,153 - INFO - Hexagon screw: 895
+2025-09-20 17:44:27,153 - INFO - Hexagonal steel column: 920
+2025-09-20 17:44:27,153 - INFO - Horizontal bubble: 897
+2025-09-20 17:44:27,153 - INFO - Keybar: 945
+2025-09-20 17:44:27,153 - INFO - Plastic cushion pillar: 908
+2025-09-20 17:44:27,153 - INFO - Rectangular nut: 924
+2025-09-20 17:44:27,153 - INFO - Round head screw: 889
+2025-09-20 17:44:27,153 - INFO - Spring washer: 940
+2025-09-20 17:44:27,153 - INFO - T-shaped screw: 910
+2025-09-20 17:44:29,769 - INFO - 成功加载 2100 个样本，13 个类别
+2025-09-20 17:44:29,838 - INFO - 
+类别分布:
+2025-09-20 17:44:29,838 - INFO - Double hexagonal column: 917
+2025-09-20 17:44:29,838 - INFO - Flange nut: 867
+2025-09-20 17:44:29,838 - INFO - Hexagon nut: 943
+2025-09-20 17:44:29,838 - INFO - Hexagon pillar: 903
+2025-09-20 17:44:29,838 - INFO - Hexagon screw: 895
+2025-09-20 17:44:29,838 - INFO - Hexagonal steel column: 920
+2025-09-20 17:44:29,838 - INFO - Horizontal bubble: 897
+2025-09-20 17:44:29,838 - INFO - Keybar: 945
+2025-09-20 17:44:29,843 - INFO - Plastic cushion pillar: 908
+2025-09-20 17:44:29,843 - INFO - Rectangular nut: 924
+2025-09-20 17:44:29,843 - INFO - Round head screw: 889
+2025-09-20 17:44:29,843 - INFO - Spring washer: 940
+2025-09-20 17:44:29,843 - INFO - T-shaped screw: 910
+2025-09-20 17:44:30,164 - INFO - 初始化多标签分类模型，类别数: 13
+2025-09-20 17:46:53,808 - INFO - 成功加载 2100 个样本，13 个类别
+2025-09-20 17:46:53,878 - INFO - 
+类别分布:
+2025-09-20 17:46:54,343 - INFO - Double hexagonal column: 917
+2025-09-20 17:46:54,343 - INFO - Flange nut: 867
+2025-09-20 17:46:54,343 - INFO - Hexagon nut: 943
+2025-09-20 17:46:54,343 - INFO - Hexagon pillar: 903
+2025-09-20 17:46:54,343 - INFO - Hexagon screw: 895
+2025-09-20 17:46:54,343 - INFO - Hexagonal steel column: 920
+2025-09-20 17:46:54,343 - INFO - Horizontal bubble: 897
+2025-09-20 17:46:54,343 - INFO - Keybar: 945
+2025-09-20 17:46:54,343 - INFO - Plastic cushion pillar: 908
+2025-09-20 17:46:54,343 - INFO - Rectangular nut: 924
+2025-09-20 17:46:54,343 - INFO - Round head screw: 889
+2025-09-20 17:46:54,343 - INFO - Spring washer: 940
+2025-09-20 17:46:54,343 - INFO - T-shaped screw: 910
+2025-09-20 17:46:55,863 - INFO - 成功加载 2100 个样本，13 个类别
+2025-09-20 17:46:55,930 - INFO - 
+类别分布:
+2025-09-20 17:46:55,932 - INFO - Double hexagonal column: 917
+2025-09-20 17:46:55,932 - INFO - Flange nut: 867
+2025-09-20 17:46:55,932 - INFO - Hexagon nut: 943
+2025-09-20 17:46:55,932 - INFO - Hexagon pillar: 903
+2025-09-20 17:46:55,932 - INFO - Hexagon screw: 895
+2025-09-20 17:46:55,932 - INFO - Hexagonal steel column: 920
+2025-09-20 17:46:55,932 - INFO - Horizontal bubble: 897
+2025-09-20 17:46:55,932 - INFO - Keybar: 945
+2025-09-20 17:46:55,932 - INFO - Plastic cushion pillar: 908
+2025-09-20 17:46:55,934 - INFO - Rectangular nut: 924
+2025-09-20 17:46:55,934 - INFO - Round head screw: 889
+2025-09-20 17:46:55,934 - INFO - Spring washer: 940
+2025-09-20 17:46:55,934 - INFO - T-shaped screw: 910
+2025-09-20 17:46:56,258 - INFO - 初始化多标签分类模型，类别数: 13
+2025-09-20 17:48:18,598 - INFO - 
+最佳阈值: 0.57
+分类报告:
+                         precision    recall  f1-score   support
+
+Double hexagonal column       0.67      0.74      0.70       871
+             Flange nut       0.89      0.94      0.91       819
+            Hexagon nut       0.73      0.73      0.73       897
+         Hexagon pillar       0.84      0.98      0.91       858
+          Hexagon screw       0.89      0.88      0.88       850
+ Hexagonal steel column       0.77      0.68      0.72       878
+      Horizontal bubble       0.98      1.00      0.99       848
+                 Keybar       0.65      0.54      0.59       898
+ Plastic cushion pillar       0.59      0.57      0.58       864
+        Rectangular nut       0.74      0.73      0.73       878
+       Round head screw       0.63      0.51      0.56       841
+          Spring washer       0.72      0.77      0.75       888
+         T-shaped screw       0.76      0.68      0.72       860
+
+              micro avg       0.76      0.75      0.76     11250
+              macro avg       0.76      0.75      0.75     11250
+           weighted avg       0.76      0.75      0.75     11250
+            samples avg       0.80      0.70      0.71     11250
+
+2025-09-20 17:48:25,153 - INFO - 验证损失: 0.6517, F1分数: 0.7552
+2025-09-20 17:48:25,155 - INFO - Epoch 1: 训练损失=0.7749, 验证F1=0.7552, 学习率=1.00e-04
+2025-09-20 17:48:35,888 - INFO - 新最佳F1分数: 0.7552
+2025-09-20 17:48:51,413 - INFO - 成功导出ONNX模型到 model.onnx
+2025-09-20 17:50:09,008 - INFO - 
+最佳阈值: 0.57
+分类报告:
+                         precision    recall  f1-score   support
+
+Double hexagonal column       0.74      0.61      0.67       871
+             Flange nut       1.00      0.90      0.95       819
+            Hexagon nut       0.85      0.87      0.86       897
+         Hexagon pillar       1.00      0.99      0.99       858
+          Hexagon screw       0.99      0.89      0.94       850
+ Hexagonal steel column       0.85      0.84      0.84       878
+      Horizontal bubble       1.00      1.00      1.00       848
+                 Keybar       0.85      0.61      0.71       898
+ Plastic cushion pillar       0.70      0.43      0.53       864
+        Rectangular nut       0.97      0.80      0.87       878
+       Round head screw       0.96      0.86      0.91       841
+          Spring washer       0.99      0.97      0.98       888
+         T-shaped screw       0.96      0.92      0.94       860
+
+              micro avg       0.92      0.82      0.87     11250
+              macro avg       0.91      0.82      0.86     11250
+           weighted avg       0.91      0.82      0.86     11250
+            samples avg       0.93      0.80      0.85     11250
+
+2025-09-20 17:50:14,008 - INFO - 验证损失: 0.6001, F1分数: 0.8677
+2025-09-20 17:50:14,028 - INFO - Epoch 2: 训练损失=0.6895, 验证F1=0.8677, 学习率=1.00e-04
+2025-09-20 17:50:28,268 - INFO - 新最佳F1分数: 0.8677
+2025-09-20 17:50:41,428 - INFO - 成功导出ONNX模型到 model.onnx
+2025-09-20 17:51:58,178 - INFO - 
+最佳阈值: 0.57
+分类报告:
+                         precision    recall  f1-score   support
+
+Double hexagonal column       0.69      0.71      0.70       871
+             Flange nut       1.00      0.89      0.94       819
+            Hexagon nut       0.97      0.97      0.97       897
+         Hexagon pillar       1.00      0.99      1.00       858
+          Hexagon screw       0.99      0.93      0.96       850
+ Hexagonal steel column       0.91      0.96      0.93       878
+      Horizontal bubble       1.00      1.00      1.00       848
+                 Keybar       0.97      0.93      0.95       898
+ Plastic cushion pillar       0.91      0.77      0.83       864
+        Rectangular nut       0.99      0.93      0.96       878
+       Round head screw       0.99      0.95      0.97       841
+          Spring washer       1.00      0.97      0.99       888
+         T-shaped screw       0.98      0.99      0.98       860
+
+              micro avg       0.95      0.92      0.94     11250
+              macro avg       0.95      0.92      0.94     11250
+           weighted avg       0.95      0.92      0.94     11250
+            samples avg       0.95      0.92      0.93     11250
+
+2025-09-20 17:52:02,538 - INFO - 验证损失: 0.5698, F1分数: 0.9371
+2025-09-20 17:52:02,538 - INFO - Epoch 3: 训练损失=0.6473, 验证F1=0.9371, 学习率=1.00e-04
+2025-09-20 17:52:16,793 - INFO - 新最佳F1分数: 0.9371
+2025-09-20 17:52:29,438 - INFO - 成功导出ONNX模型到 model.onnx
+2025-09-20 17:53:46,318 - INFO - 
+最佳阈值: 0.57
+分类报告:
+                         precision    recall  f1-score   support
+
+Double hexagonal column       0.89      0.68      0.77       871
+             Flange nut       1.00      0.94      0.97       819
+            Hexagon nut       0.94      0.99      0.96       897
+         Hexagon pillar       1.00      0.99      1.00       858
+          Hexagon screw       0.99      0.99      0.99       850
+ Hexagonal steel column       0.96      0.96      0.96       878
+      Horizontal bubble       1.00      1.00      1.00       848
+                 Keybar       1.00      0.98      0.99       898
+ Plastic cushion pillar       0.99      0.93      0.95       864
+        Rectangular nut       1.00      0.95      0.97       878
+       Round head screw       1.00      0.95      0.97       841
+          Spring washer       0.99      0.98      0.98       888
+         T-shaped screw       0.98      0.99      0.99       860
+
+              micro avg       0.98      0.95      0.96     11250
+              macro avg       0.98      0.95      0.96     11250
+           weighted avg       0.98      0.95      0.96     11250
+            samples avg       0.98      0.95      0.96     11250
+
+2025-09-20 17:53:50,758 - INFO - 验证损失: 0.5562, F1分数: 0.9642
+2025-09-20 17:53:50,768 - INFO - Epoch 4: 训练损失=0.6239, 验证F1=0.9642, 学习率=1.00e-04
+2025-09-20 17:54:04,948 - INFO - 新最佳F1分数: 0.9642
+2025-09-20 17:54:17,587 - INFO - 成功导出ONNX模型到 model.onnx
+2025-09-20 17:55:34,389 - INFO - 
+最佳阈值: 0.57
+分类报告:
+                         precision    recall  f1-score   support
+
+Double hexagonal column       0.88      0.93      0.91       871
+             Flange nut       1.00      0.99      0.99       819
+            Hexagon nut       0.97      0.99      0.98       897
+         Hexagon pillar       1.00      0.99      1.00       858
+          Hexagon screw       0.99      0.99      0.99       850
+ Hexagonal steel column       0.98      0.98      0.98       878
+      Horizontal bubble       1.00      1.00      1.00       848
+                 Keybar       1.00      0.99      0.99       898
+ Plastic cushion pillar       0.98      0.97      0.97       864
+        Rectangular nut       1.00      0.97      0.99       878
+       Round head screw       1.00      0.96      0.98       841
+          Spring washer       1.00      0.98      0.99       888
+         T-shaped screw       0.99      0.99      0.99       860
+
+              micro avg       0.98      0.98      0.98     11250
+              macro avg       0.98      0.98      0.98     11250
+           weighted avg       0.98      0.98      0.98     11250
+            samples avg       0.98      0.98      0.98     11250
+
+2025-09-20 17:55:36,637 - INFO - 验证损失: 0.5484, F1分数: 0.9801
+2025-09-20 17:55:36,637 - INFO - Epoch 5: 训练损失=0.6108, 验证F1=0.9801, 学习率=1.00e-04
+2025-09-20 17:55:47,897 - INFO - 新最佳F1分数: 0.9801
+2025-09-20 17:56:01,447 - INFO - 成功导出ONNX模型到 model.onnx
+2025-09-20 17:57:18,327 - INFO - 
+最佳阈值: 0.57
+分类报告:
+                         precision    recall  f1-score   support
+
+Double hexagonal column       0.92      0.96      0.94       871
+             Flange nut       1.00      0.93      0.96       819
+            Hexagon nut       0.93      1.00      0.96       897
+         Hexagon pillar       1.00      0.99      1.00       858
+          Hexagon screw       0.99      0.99      0.99       850
+ Hexagonal steel column       0.99      0.98      0.98       878
+      Horizontal bubble       1.00      1.00      1.00       848
+                 Keybar       0.99      1.00      0.99       898
+ Plastic cushion pillar       0.98      0.97      0.98       864
+        Rectangular nut       1.00      0.95      0.98       878
+       Round head screw       0.99      0.97      0.98       841
+          Spring washer       1.00      0.97      0.98       888
+         T-shaped screw       0.99      0.98      0.99       860
+
+              micro avg       0.98      0.98      0.98     11250
+              macro avg       0.98      0.98      0.98     11250
+           weighted avg       0.98      0.98      0.98     11250
+            samples avg       0.98      0.98      0.98     11250
+
+2025-09-20 17:57:20,527 - INFO - 验证损失: 0.5475, F1分数: 0.9789
+2025-09-20 17:57:20,527 - INFO - Epoch 6: 训练损失=0.6052, 验证F1=0.9789, 学习率=1.00e-04
+2025-09-20 17:58:41,441 - INFO - 
+最佳阈值: 0.60
+分类报告:
+                         precision    recall  f1-score   support
+
+Double hexagonal column       0.95      0.96      0.96       871
+             Flange nut       1.00      0.99      0.99       819
+            Hexagon nut       0.98      0.99      0.99       897
+         Hexagon pillar       1.00      0.99      1.00       858
+          Hexagon screw       0.99      1.00      0.99       850
+ Hexagonal steel column       0.99      0.99      0.99       878
+      Horizontal bubble       1.00      1.00      1.00       848
+                 Keybar       1.00      0.99      1.00       898
+ Plastic cushion pillar       0.99      0.98      0.98       864
+        Rectangular nut       1.00      0.99      0.99       878
+       Round head screw       0.99      0.99      0.99       841
+          Spring washer       1.00      0.98      0.99       888
+         T-shaped screw       0.99      0.98      0.98       860
+
+              micro avg       0.99      0.99      0.99     11250
+              macro avg       0.99      0.99      0.99     11250
+           weighted avg       0.99      0.99      0.99     11250
+            samples avg       0.99      0.99      0.99     11250
+
+2025-09-20 17:58:45,649 - INFO - 验证损失: 0.5426, F1分数: 0.9881
+2025-09-20 17:58:45,649 - INFO - Epoch 7: 训练损失=0.6016, 验证F1=0.9881, 学习率=1.00e-04
+2025-09-20 17:58:59,317 - INFO - 新最佳F1分数: 0.9881
+2025-09-20 17:59:12,777 - INFO - 成功导出ONNX模型到 model.onnx
+2025-09-20 18:00:29,938 - INFO - 
+最佳阈值: 0.53
+分类报告:
+                         precision    recall  f1-score   support
+
+Double hexagonal column       0.96      0.97      0.96       871
+             Flange nut       1.00      0.99      1.00       819
+            Hexagon nut       0.99      0.99      0.99       897
+         Hexagon pillar       1.00      1.00      1.00       858
+          Hexagon screw       0.99      0.99      0.99       850
+ Hexagonal steel column       0.99      0.98      0.98       878
+      Horizontal bubble       1.00      1.00      1.00       848
+                 Keybar       1.00      0.99      1.00       898
+ Plastic cushion pillar       1.00      0.97      0.98       864
+        Rectangular nut       0.99      0.99      0.99       878
+       Round head screw       0.99      0.99      0.99       841
+          Spring washer       1.00      0.98      0.99       888
+         T-shaped screw       0.99      0.99      0.99       860
+
+              micro avg       0.99      0.99      0.99     11250
+              macro avg       0.99      0.99      0.99     11250
+           weighted avg       0.99      0.99      0.99     11250
+            samples avg       0.99      0.99      0.99     11250
+
+2025-09-20 18:00:34,337 - INFO - 验证损失: 0.5425, F1分数: 0.9888
+2025-09-20 18:00:34,337 - INFO - Epoch 8: 训练损失=0.5975, 验证F1=0.9888, 学习率=1.00e-04
+2025-09-20 18:00:44,887 - INFO - 新最佳F1分数: 0.9888
+2025-09-20 18:00:57,879 - INFO - 成功导出ONNX模型到 model.onnx
+2025-09-20 18:02:14,751 - INFO - 
+最佳阈值: 0.57
+分类报告:
+                         precision    recall  f1-score   support
+
+Double hexagonal column       0.89      0.99      0.94       871
+             Flange nut       1.00      1.00      1.00       819
+            Hexagon nut       0.99      0.99      0.99       897
+         Hexagon pillar       1.00      1.00      1.00       858
+          Hexagon screw       0.99      1.00      0.99       850
+ Hexagonal steel column       1.00      0.90      0.95       878
+      Horizontal bubble       1.00      1.00      1.00       848
+                 Keybar       1.00      0.99      0.99       898
+ Plastic cushion pillar       0.99      0.98      0.99       864
+        Rectangular nut       1.00      0.98      0.99       878
+       Round head screw       0.99      0.99      0.99       841
+          Spring washer       1.00      0.99      0.99       888
+         T-shaped screw       0.99      0.99      0.99       860
+
+              micro avg       0.99      0.98      0.99     11250
+              macro avg       0.99      0.98      0.99     11250
+           weighted avg       0.99      0.98      0.99     11250
+            samples avg       0.99      0.98      0.99     11250
+
+2025-09-20 18:02:19,767 - INFO - 验证损失: 0.5425, F1分数: 0.9855
+2025-09-20 18:02:19,776 - INFO - Epoch 9: 训练损失=0.5963, 验证F1=0.9855, 学习率=1.00e-04
+2025-09-20 18:03:39,248 - INFO - 
+最佳阈值: 0.57
+分类报告:
+                         precision    recall  f1-score   support
+
+Double hexagonal column       0.97      0.98      0.97       871
+             Flange nut       1.00      1.00      1.00       819
+            Hexagon nut       0.98      1.00      0.99       897
+         Hexagon pillar       1.00      1.00      1.00       858
+          Hexagon screw       0.99      1.00      0.99       850
+ Hexagonal steel column       0.99      0.99      0.99       878
+      Horizontal bubble       1.00      1.00      1.00       848
+                 Keybar       1.00      0.99      0.99       898
+ Plastic cushion pillar       1.00      0.98      0.99       864
+        Rectangular nut       0.99      0.99      0.99       878
+       Round head screw       0.99      1.00      0.99       841
+          Spring washer       1.00      0.99      0.99       888
+         T-shaped screw       0.99      0.99      0.99       860
+
+              micro avg       0.99      0.99      0.99     11250
+              macro avg       0.99      0.99      0.99     11250
+           weighted avg       0.99      0.99      0.99     11250
+            samples avg       0.99      0.99      0.99     11250
+
+2025-09-20 18:03:45,797 - INFO - 验证损失: 0.5403, F1分数: 0.9912
+2025-09-20 18:03:45,797 - INFO - Epoch 10: 训练损失=0.5950, 验证F1=0.9912, 学习率=1.00e-04
+2025-09-20 18:04:00,036 - INFO - 新最佳F1分数: 0.9912
+2025-09-20 18:04:16,946 - INFO - 成功导出ONNX模型到 model.onnx
+2025-09-20 18:05:34,836 - INFO - 
+最佳阈值: 0.53
+分类报告:
+                         precision    recall  f1-score   support
+
+Double hexagonal column       0.93      0.99      0.96       871
+             Flange nut       1.00      0.99      1.00       819
+            Hexagon nut       1.00      0.99      0.99       897
+         Hexagon pillar       1.00      1.00      1.00       858
+          Hexagon screw       0.99      1.00      0.99       850
+ Hexagonal steel column       1.00      0.98      0.99       878
+      Horizontal bubble       1.00      1.00      1.00       848
+                 Keybar       1.00      1.00      1.00       898
+ Plastic cushion pillar       0.99      0.98      0.99       864
+        Rectangular nut       0.99      0.99      0.99       878
+       Round head screw       0.99      1.00      0.99       841
+          Spring washer       1.00      0.99      0.99       888
+         T-shaped screw       0.99      1.00      0.99       860
+
+              micro avg       0.99      0.99      0.99     11250
+              macro avg       0.99      0.99      0.99     11250
+           weighted avg       0.99      0.99      0.99     11250
+            samples avg       0.99      0.99      0.99     11250
+
+2025-09-20 18:05:41,196 - INFO - 验证损失: 0.5400, F1分数: 0.9906
+2025-09-20 18:05:41,206 - INFO - Epoch 11: 训练损失=0.5936, 验证F1=0.9906, 学习率=1.00e-04
+2025-09-20 18:06:59,678 - INFO - 
+最佳阈值: 0.57
+分类报告:
+                         precision    recall  f1-score   support
+
+Double hexagonal column       0.96      0.98      0.97       871
+             Flange nut       1.00      1.00      1.00       819
+            Hexagon nut       0.99      1.00      0.99       897
+         Hexagon pillar       1.00      1.00      1.00       858
+          Hexagon screw       0.99      1.00      0.99       850
+ Hexagonal steel column       0.99      0.99      0.99       878
+      Horizontal bubble       1.00      1.00      1.00       848
+                 Keybar       1.00      0.99      1.00       898
+ Plastic cushion pillar       1.00      0.97      0.99       864
+        Rectangular nut       1.00      0.99      0.99       878
+       Round head screw       1.00      0.98      0.99       841
+          Spring washer       1.00      0.99      0.99       888
+         T-shaped screw       0.99      1.00      0.99       860
+
+              micro avg       0.99      0.99      0.99     11250
+              macro avg       0.99      0.99      0.99     11250
+           weighted avg       0.99      0.99      0.99     11250
+            samples avg       0.99      0.99      0.99     11250
+
+2025-09-20 18:07:04,661 - INFO - 验证损失: 0.5394, F1分数: 0.9918
+2025-09-20 18:07:04,661 - INFO - Epoch 12: 训练损失=0.5932, 验证F1=0.9918, 学习率=1.00e-04
+2025-09-20 18:07:17,866 - INFO - 新最佳F1分数: 0.9918
+2025-09-20 18:07:32,126 - INFO - 成功导出ONNX模型到 model.onnx
+2025-09-20 18:08:49,204 - INFO - 
+最佳阈值: 0.57
+分类报告:
+                         precision    recall  f1-score   support
+
+Double hexagonal column       0.96      0.99      0.97       871
+             Flange nut       1.00      0.99      0.99       819
+            Hexagon nut       0.98      1.00      0.99       897
+         Hexagon pillar       1.00      1.00      1.00       858
+          Hexagon screw       0.99      1.00      0.99       850
+ Hexagonal steel column       1.00      0.98      0.99       878
+      Horizontal bubble       1.00      1.00      1.00       848
+                 Keybar       1.00      0.98      0.99       898
+ Plastic cushion pillar       1.00      0.98      0.99       864
+        Rectangular nut       0.99      0.99      0.99       878
+       Round head screw       1.00      1.00      1.00       841
+          Spring washer       1.00      1.00      1.00       888
+         T-shaped screw       0.99      1.00      0.99       860
+
+              micro avg       0.99      0.99      0.99     11250
+              macro avg       0.99      0.99      0.99     11250
+           weighted avg       0.99      0.99      0.99     11250
+            samples avg       0.99      0.99      0.99     11250
+
+2025-09-20 18:08:53,536 - INFO - 验证损失: 0.5398, F1分数: 0.9910
+2025-09-20 18:08:53,546 - INFO - Epoch 13: 训练损失=0.5918, 验证F1=0.9910, 学习率=1.00e-04
+2025-09-20 18:10:11,431 - INFO - 
+最佳阈值: 0.53
+分类报告:
+                         precision    recall  f1-score   support
+
+Double hexagonal column       0.98      0.97      0.98       871
+             Flange nut       1.00      1.00      1.00       819
+            Hexagon nut       0.98      1.00      0.99       897
+         Hexagon pillar       1.00      1.00      1.00       858
+          Hexagon screw       0.99      1.00      0.99       850
+ Hexagonal steel column       0.99      0.99      0.99       878
+      Horizontal bubble       1.00      1.00      1.00       848
+                 Keybar       1.00      0.99      1.00       898
+ Plastic cushion pillar       0.99      0.99      0.99       864
+        Rectangular nut       1.00      0.99      0.99       878
+       Round head screw       0.99      1.00      0.99       841
+          Spring washer       1.00      1.00      1.00       888
+         T-shaped screw       0.99      1.00      0.99       860
+
+              micro avg       0.99      0.99      0.99     11250
+              macro avg       0.99      0.99      0.99     11250
+           weighted avg       0.99      0.99      0.99     11250
+            samples avg       0.99      0.99      0.99     11250
+
+2025-09-20 18:10:16,466 - INFO - 验证损失: 0.5390, F1分数: 0.9932
+2025-09-20 18:10:16,476 - INFO - Epoch 14: 训练损失=0.5928, 验证F1=0.9932, 学习率=1.00e-04
+2025-09-20 18:10:29,540 - INFO - 新最佳F1分数: 0.9932
+2025-09-20 18:10:44,896 - INFO - 成功导出ONNX模型到 model.onnx
+2025-09-20 18:12:01,971 - INFO - 
+最佳阈值: 0.57
+分类报告:
+                         precision    recall  f1-score   support
+
+Double hexagonal column       0.95      0.99      0.97       871
+             Flange nut       1.00      0.98      0.99       819
+            Hexagon nut       0.96      1.00      0.98       897
+         Hexagon pillar       1.00      1.00      1.00       858
+          Hexagon screw       0.99      1.00      0.99       850
+ Hexagonal steel column       1.00      0.96      0.98       878
+      Horizontal bubble       1.00      1.00      1.00       848
+                 Keybar       1.00      0.99      1.00       898
+ Plastic cushion pillar       1.00      0.97      0.99       864
+        Rectangular nut       0.99      0.99      0.99       878
+       Round head screw       0.98      1.00      0.99       841
+          Spring washer       1.00      0.99      0.99       888
+         T-shaped screw       0.99      1.00      0.99       860
+
+              micro avg       0.99      0.99      0.99     11250
+              macro avg       0.99      0.99      0.99     11250
+           weighted avg       0.99      0.99      0.99     11250
+            samples avg       0.99      0.99      0.99     11250
+
+2025-09-20 18:12:06,331 - INFO - 验证损失: 0.5401, F1分数: 0.9899
+2025-09-20 18:12:06,336 - INFO - Epoch 15: 训练损失=0.5919, 验证F1=0.9899, 学习率=1.00e-04
+2025-09-20 18:13:24,529 - INFO - 
+最佳阈值: 0.53
+分类报告:
+                         precision    recall  f1-score   support
+
+Double hexagonal column       0.98      0.96      0.97       871
+             Flange nut       1.00      0.98      0.99       819
+            Hexagon nut       0.98      1.00      0.99       897
+         Hexagon pillar       1.00      1.00      1.00       858
+          Hexagon screw       0.99      1.00      0.99       850
+ Hexagonal steel column       0.99      0.99      0.99       878
+      Horizontal bubble       1.00      1.00      1.00       848
+                 Keybar       1.00      1.00      1.00       898
+ Plastic cushion pillar       1.00      0.98      0.99       864
+        Rectangular nut       0.99      0.99      0.99       878
+       Round head screw       0.99      1.00      1.00       841
+          Spring washer       1.00      1.00      1.00       888
+         T-shaped screw       0.99      1.00      0.99       860
+
+              micro avg       0.99      0.99      0.99     11250
+              macro avg       0.99      0.99      0.99     11250
+           weighted avg       0.99      0.99      0.99     11250
+            samples avg       0.99      0.99      0.99     11250
+
+2025-09-20 18:13:29,625 - INFO - 验证损失: 0.5392, F1分数: 0.9925
+2025-09-20 18:13:29,625 - INFO - Epoch 16: 训练损失=0.5917, 验证F1=0.9925, 学习率=1.00e-04
+2025-09-20 18:14:48,422 - INFO - 
+最佳阈值: 0.53
+分类报告:
+                         precision    recall  f1-score   support
+
+Double hexagonal column       0.97      0.99      0.98       871
+             Flange nut       1.00      1.00      1.00       819
+            Hexagon nut       0.99      0.98      0.99       897
+         Hexagon pillar       1.00      1.00      1.00       858
+          Hexagon screw       0.99      1.00      0.99       850
+ Hexagonal steel column       0.99      0.99      0.99       878
+      Horizontal bubble       1.00      1.00      1.00       848
+                 Keybar       1.00      0.99      1.00       898
+ Plastic cushion pillar       1.00      0.98      0.99       864
+        Rectangular nut       1.00      0.99      0.99       878
+       Round head screw       0.98      1.00      0.99       841
+          Spring washer       1.00      1.00      1.00       888
+         T-shaped screw       1.00      1.00      1.00       860
+
+              micro avg       0.99      0.99      0.99     11250
+              macro avg       0.99      0.99      0.99     11250
+           weighted avg       0.99      0.99      0.99     11250
+            samples avg       0.99      0.99      0.99     11250
+
+2025-09-20 18:14:53,500 - INFO - 验证损失: 0.5386, F1分数: 0.9933
+2025-09-20 18:14:53,500 - INFO - Epoch 17: 训练损失=0.5913, 验证F1=0.9933, 学习率=1.00e-04
+2025-09-20 18:15:07,246 - INFO - 新最佳F1分数: 0.9933
+2025-09-20 18:15:21,590 - INFO - 成功导出ONNX模型到 model.onnx
+2025-09-20 18:16:38,559 - INFO - 
+最佳阈值: 0.53
+分类报告:
+                         precision    recall  f1-score   support
+
+Double hexagonal column       0.96      0.99      0.97       871
+             Flange nut       1.00      1.00      1.00       819
+            Hexagon nut       1.00      1.00      1.00       897
+         Hexagon pillar       1.00      1.00      1.00       858
+          Hexagon screw       0.99      1.00      0.99       850
+ Hexagonal steel column       1.00      0.99      0.99       878
+      Horizontal bubble       1.00      1.00      1.00       848
+                 Keybar       1.00      0.97      0.99       898
+ Plastic cushion pillar       1.00      0.98      0.99       864
+        Rectangular nut       0.99      0.99      0.99       878
+       Round head screw       0.99      1.00      1.00       841
+          Spring washer       1.00      1.00      1.00       888
+         T-shaped screw       1.00      0.99      0.99       860
+
+              micro avg       0.99      0.99      0.99     11250
+              macro avg       0.99      0.99      0.99     11250
+           weighted avg       0.99      0.99      0.99     11250
+            samples avg       0.99      0.99      0.99     11250
+
+2025-09-20 18:16:43,075 - INFO - 验证损失: 0.5388, F1分数: 0.9927
+2025-09-20 18:16:43,075 - INFO - Epoch 18: 训练损失=0.5915, 验证F1=0.9927, 学习率=1.00e-04
+2025-09-20 18:18:01,364 - INFO - 
+最佳阈值: 0.57
+分类报告:
+                         precision    recall  f1-score   support
+
+Double hexagonal column       0.98      0.99      0.98       871
+             Flange nut       1.00      0.99      0.99       819
+            Hexagon nut       0.98      1.00      0.99       897
+         Hexagon pillar       1.00      1.00      1.00       858
+          Hexagon screw       0.99      1.00      0.99       850
+ Hexagonal steel column       0.99      0.99      0.99       878
+      Horizontal bubble       1.00      1.00      1.00       848
+                 Keybar       1.00      1.00      1.00       898
+ Plastic cushion pillar       1.00      0.97      0.98       864
+        Rectangular nut       1.00      0.99      0.99       878
+       Round head screw       0.99      1.00      1.00       841
+          Spring washer       1.00      1.00      1.00       888
+         T-shaped screw       1.00      0.99      1.00       860
+
+              micro avg       0.99      0.99      0.99     11250
+              macro avg       0.99      0.99      0.99     11250
+           weighted avg       0.99      0.99      0.99     11250
+            samples avg       0.99      0.99      0.99     11250
+
+2025-09-20 18:18:06,275 - INFO - 验证损失: 0.5387, F1分数: 0.9931
+2025-09-20 18:18:06,275 - INFO - Epoch 19: 训练损失=0.5908, 验证F1=0.9931, 学习率=1.00e-04
+2025-09-20 18:19:24,695 - INFO - 
+最佳阈值: 0.60
+分类报告:
+                         precision    recall  f1-score   support
+
+Double hexagonal column       0.97      1.00      0.98       871
+             Flange nut       1.00      1.00      1.00       819
+            Hexagon nut       0.99      1.00      1.00       897
+         Hexagon pillar       1.00      1.00      1.00       858
+          Hexagon screw       0.99      1.00      0.99       850
+ Hexagonal steel column       1.00      0.98      0.99       878
+      Horizontal bubble       1.00      1.00      1.00       848
+                 Keybar       1.00      1.00      1.00       898
+ Plastic cushion pillar       1.00      0.98      0.99       864
+        Rectangular nut       1.00      0.99      0.99       878
+       Round head screw       1.00      0.99      0.99       841
+          Spring washer       1.00      1.00      1.00       888
+         T-shaped screw       0.99      0.99      0.99       860
+
+              micro avg       0.99      0.99      0.99     11250
+              macro avg       0.99      0.99      0.99     11250
+           weighted avg       0.99      0.99      0.99     11250
+            samples avg       0.99      0.99      0.99     11250
+
+2025-09-20 18:19:30,324 - INFO - 验证损失: 0.5382, F1分数: 0.9938
+2025-09-20 18:19:30,324 - INFO - Epoch 20: 训练损失=0.5909, 验证F1=0.9938, 学习率=1.00e-04
+2025-09-20 18:19:42,885 - INFO - 新最佳F1分数: 0.9938
+2025-09-20 18:19:55,465 - INFO - 成功导出ONNX模型到 model.onnx
+2025-09-20 18:21:12,334 - INFO - 
+最佳阈值: 0.53
+分类报告:
+                         precision    recall  f1-score   support
+
+Double hexagonal column       0.98      0.99      0.99       871
+             Flange nut       1.00      1.00      1.00       819
+            Hexagon nut       0.99      1.00      0.99       897
+         Hexagon pillar       1.00      1.00      1.00       858
+          Hexagon screw       0.99      1.00      0.99       850
+ Hexagonal steel column       1.00      0.99      0.99       878
+      Horizontal bubble       1.00      1.00      1.00       848
+                 Keybar       1.00      1.00      1.00       898
+ Plastic cushion pillar       0.99      0.99      0.99       864
+        Rectangular nut       1.00      0.99      0.99       878
+       Round head screw       1.00      0.99      1.00       841
+          Spring washer       1.00      1.00      1.00       888
+         T-shaped screw       1.00      1.00      1.00       860
+
+              micro avg       1.00      1.00      1.00     11250
+              macro avg       1.00      1.00      1.00     11250
+           weighted avg       1.00      1.00      1.00     11250
+            samples avg       1.00      1.00      1.00     11250
+
+2025-09-20 18:21:16,685 - INFO - 验证损失: 0.5377, F1分数: 0.9955
+2025-09-20 18:21:16,694 - INFO - Epoch 21: 训练损失=0.5898, 验证F1=0.9955, 学习率=1.00e-04
+2025-09-20 18:21:29,858 - INFO - 新最佳F1分数: 0.9955
+2025-09-20 18:21:43,084 - INFO - 成功导出ONNX模型到 model.onnx
+2025-09-20 18:23:00,014 - INFO - 
+最佳阈值: 0.53
+分类报告:
+                         precision    recall  f1-score   support
+
+Double hexagonal column       0.97      1.00      0.99       871
+             Flange nut       1.00      1.00      1.00       819
+            Hexagon nut       0.99      1.00      1.00       897
+         Hexagon pillar       1.00      1.00      1.00       858
+          Hexagon screw       0.99      1.00      0.99       850
+ Hexagonal steel column       1.00      0.98      0.99       878
+      Horizontal bubble       1.00      1.00      1.00       848
+                 Keybar       1.00      1.00      1.00       898
+ Plastic cushion pillar       1.00      0.99      0.99       864
+        Rectangular nut       0.99      0.99      0.99       878
+       Round head screw       1.00      1.00      1.00       841
+          Spring washer       1.00      1.00      1.00       888
+         T-shaped screw       1.00      1.00      1.00       860
+
+              micro avg       0.99      1.00      1.00     11250
+              macro avg       0.99      1.00      1.00     11250
+           weighted avg       0.99      1.00      1.00     11250
+            samples avg       1.00      1.00      1.00     11250
+
+2025-09-20 18:23:04,505 - INFO - 验证损失: 0.5377, F1分数: 0.9952
+2025-09-20 18:23:04,505 - INFO - Epoch 22: 训练损失=0.5898, 验证F1=0.9952, 学习率=1.00e-04
+2025-09-20 18:24:22,534 - INFO - 
+最佳阈值: 0.53
+分类报告:
+                         precision    recall  f1-score   support
+
+Double hexagonal column       0.98      1.00      0.99       871
+             Flange nut       1.00      0.99      1.00       819
+            Hexagon nut       0.99      1.00      0.99       897
+         Hexagon pillar       1.00      1.00      1.00       858
+          Hexagon screw       0.99      1.00      0.99       850
+ Hexagonal steel column       1.00      0.98      0.99       878
+      Horizontal bubble       1.00      1.00      1.00       848
+                 Keybar       1.00      1.00      1.00       898
+ Plastic cushion pillar       0.99      0.99      0.99       864
+        Rectangular nut       0.98      1.00      0.99       878
+       Round head screw       1.00      1.00      1.00       841
+          Spring washer       1.00      0.99      1.00       888
+         T-shaped screw       1.00      1.00      1.00       860
+
+              micro avg       0.99      1.00      0.99     11250
+              macro avg       0.99      1.00      0.99     11250
+           weighted avg       0.99      1.00      0.99     11250
+            samples avg       0.99      1.00      0.99     11250
+
+2025-09-20 18:24:27,574 - INFO - 验证损失: 0.5383, F1分数: 0.9943
+2025-09-20 18:24:27,574 - INFO - Epoch 23: 训练损失=0.5886, 验证F1=0.9943, 学习率=1.00e-04
+2025-09-20 18:25:46,052 - INFO - 
+最佳阈值: 0.53
+分类报告:
+                         precision    recall  f1-score   support
+
+Double hexagonal column       0.98      1.00      0.99       871
+             Flange nut       1.00      1.00      1.00       819
+            Hexagon nut       0.99      1.00      1.00       897
+         Hexagon pillar       1.00      1.00      1.00       858
+          Hexagon screw       0.99      1.00      0.99       850
+ Hexagonal steel column       1.00      0.98      0.99       878
+      Horizontal bubble       1.00      1.00      1.00       848
+                 Keybar       1.00      1.00      1.00       898
+ Plastic cushion pillar       1.00      0.99      0.99       864
+        Rectangular nut       1.00      0.99      0.99       878
+       Round head screw       0.99      1.00      1.00       841
+          Spring washer       1.00      1.00      1.00       888
+         T-shaped screw       1.00      1.00      1.00       860
+
+              micro avg       1.00      1.00      1.00     11250
+              macro avg       1.00      1.00      1.00     11250
+           weighted avg       1.00      1.00      1.00     11250
+            samples avg       1.00      1.00      1.00     11250
+
+2025-09-20 18:25:50,984 - INFO - 验证损失: 0.5374, F1分数: 0.9959
+2025-09-20 18:25:50,984 - INFO - Epoch 24: 训练损失=0.5897, 验证F1=0.9959, 学习率=1.00e-04
+2025-09-20 18:26:04,894 - INFO - 新最佳F1分数: 0.9959
+2025-09-20 18:26:17,514 - INFO - 成功导出ONNX模型到 model.onnx
+2025-09-20 18:27:34,881 - INFO - 
+最佳阈值: 0.53
+分类报告:
+                         precision    recall  f1-score   support
+
+Double hexagonal column       0.99      0.99      0.99       871
+             Flange nut       1.00      1.00      1.00       819
+            Hexagon nut       0.99      1.00      0.99       897
+         Hexagon pillar       1.00      1.00      1.00       858
+          Hexagon screw       0.99      1.00      0.99       850
+ Hexagonal steel column       1.00      0.99      0.99       878
+      Horizontal bubble       1.00      1.00      1.00       848
+                 Keybar       1.00      1.00      1.00       898
+ Plastic cushion pillar       1.00      0.98      0.99       864
+        Rectangular nut       1.00      0.99      1.00       878
+       Round head screw       1.00      0.99      1.00       841
+          Spring washer       1.00      1.00      1.00       888
+         T-shaped screw       1.00      1.00      1.00       860
+
+              micro avg       1.00      0.99      1.00     11250
+              macro avg       1.00      0.99      1.00     11250
+           weighted avg       1.00      0.99      1.00     11250
+            samples avg       1.00      0.99      1.00     11250
+
+2025-09-20 18:27:39,394 - INFO - 验证损失: 0.5376, F1分数: 0.9956
+2025-09-20 18:27:39,404 - INFO - Epoch 25: 训练损失=0.5893, 验证F1=0.9956, 学习率=1.00e-04
+2025-09-20 18:28:57,633 - INFO - 
+最佳阈值: 0.57
+分类报告:
+                         precision    recall  f1-score   support
+
+Double hexagonal column       0.98      1.00      0.99       871
+             Flange nut       1.00      1.00      1.00       819
+            Hexagon nut       0.99      1.00      0.99       897
+         Hexagon pillar       1.00      1.00      1.00       858
+          Hexagon screw       0.99      1.00      0.99       850
+ Hexagonal steel column       1.00      0.99      0.99       878
+      Horizontal bubble       1.00      1.00      1.00       848
+                 Keybar       1.00      1.00      1.00       898
+ Plastic cushion pillar       0.99      0.99      0.99       864
+        Rectangular nut       1.00      1.00      1.00       878
+       Round head screw       1.00      1.00      1.00       841
+          Spring washer       1.00      1.00      1.00       888
+         T-shaped screw       1.00      1.00      1.00       860
+
+              micro avg       1.00      1.00      1.00     11250
+              macro avg       1.00      1.00      1.00     11250
+           weighted avg       1.00      1.00      1.00     11250
+            samples avg       1.00      1.00      1.00     11250
+
+2025-09-20 18:29:02,553 - INFO - 验证损失: 0.5375, F1分数: 0.9956
+2025-09-20 18:29:02,554 - INFO - Epoch 26: 训练损失=0.5893, 验证F1=0.9956, 学习率=1.00e-04
+2025-09-20 18:30:21,858 - INFO - 
+最佳阈值: 0.53
+分类报告:
+                         precision    recall  f1-score   support
+
+Double hexagonal column       0.98      1.00      0.99       871
+             Flange nut       1.00      0.98      0.99       819
+            Hexagon nut       0.97      1.00      0.99       897
+         Hexagon pillar       1.00      1.00      1.00       858
+          Hexagon screw       0.99      1.00      0.99       850
+ Hexagonal steel column       1.00      0.99      0.99       878
+      Horizontal bubble       1.00      1.00      1.00       848
+                 Keybar       1.00      1.00      1.00       898
+ Plastic cushion pillar       1.00      0.99      0.99       864
+        Rectangular nut       1.00      0.99      0.99       878
+       Round head screw       1.00      0.99      1.00       841
+          Spring washer       1.00      1.00      1.00       888
+         T-shaped screw       1.00      1.00      1.00       860
+
+              micro avg       0.99      0.99      0.99     11250
+              macro avg       0.99      0.99      0.99     11250
+           weighted avg       0.99      0.99      0.99     11250
+            samples avg       0.99      0.99      0.99     11250
+
+2025-09-20 18:30:26,453 - INFO - 验证损失: 0.5382, F1分数: 0.9938
+2025-09-20 18:30:26,453 - INFO - Epoch 27: 训练损失=0.5891, 验证F1=0.9938, 学习率=5.00e-05
+2025-09-20 18:31:45,643 - INFO - 
+最佳阈值: 0.60
+分类报告:
+                         precision    recall  f1-score   support
+
+Double hexagonal column       0.99      0.99      0.99       871
+             Flange nut       1.00      0.99      1.00       819
+            Hexagon nut       0.99      1.00      0.99       897
+         Hexagon pillar       1.00      1.00      1.00       858
+          Hexagon screw       0.99      1.00      1.00       850
+ Hexagonal steel column       1.00      0.99      0.99       878
+      Horizontal bubble       1.00      1.00      1.00       848
+                 Keybar       1.00      1.00      1.00       898
+ Plastic cushion pillar       1.00      0.99      0.99       864
+        Rectangular nut       1.00      0.99      0.99       878
+       Round head screw       1.00      0.99      0.99       841
+          Spring washer       1.00      1.00      1.00       888
+         T-shaped screw       1.00      1.00      1.00       860
+
+              micro avg       1.00      0.99      1.00     11250
+              macro avg       1.00      0.99      1.00     11250
+           weighted avg       1.00      0.99      1.00     11250
+            samples avg       1.00      0.99      1.00     11250
+
+2025-09-20 18:31:50,558 - INFO - 验证损失: 0.5375, F1分数: 0.9955
+2025-09-20 18:31:50,568 - INFO - Epoch 28: 训练损失=0.5884, 验证F1=0.9955, 学习率=5.00e-05
+2025-09-20 18:33:09,384 - INFO - 
+最佳阈值: 0.53
+分类报告:
+                         precision    recall  f1-score   support
+
+Double hexagonal column       0.98      1.00      0.99       871
+             Flange nut       1.00      1.00      1.00       819
+            Hexagon nut       0.99      1.00      0.99       897
+         Hexagon pillar       1.00      1.00      1.00       858
+          Hexagon screw       0.99      1.00      0.99       850
+ Hexagonal steel column       0.99      0.99      0.99       878
+      Horizontal bubble       1.00      1.00      1.00       848
+                 Keybar       1.00      1.00      1.00       898
+ Plastic cushion pillar       0.99      1.00      0.99       864
+        Rectangular nut       0.99      1.00      0.99       878
+       Round head screw       1.00      0.99      1.00       841
+          Spring washer       1.00      1.00      1.00       888
+         T-shaped screw       1.00      1.00      1.00       860
+
+              micro avg       0.99      1.00      1.00     11250
+              macro avg       0.99      1.00      1.00     11250
+           weighted avg       0.99      1.00      1.00     11250
+            samples avg       1.00      1.00      1.00     11250
+
+2025-09-20 18:33:14,503 - INFO - 验证损失: 0.5373, F1分数: 0.9958
+2025-09-20 18:33:14,513 - INFO - Epoch 29: 训练损失=0.5877, 验证F1=0.9958, 学习率=5.00e-05
+2025-09-20 18:33:14,513 - INFO - 早停触发，最佳F1分数: 0.9959
+2025-09-20 18:33:14,755 - INFO - 训练完成，结果已保存
+2025-09-20 18:33:14,755 - INFO - 
+最终评估结果:
+2025-09-20 18:33:14,755 - INFO - 最佳阈值: 0.5333
+2025-09-20 18:33:14,755 - INFO - 准确率: 0.9619
+2025-09-20 18:33:14,755 - INFO - 精确率: 0.9947
+2025-09-20 18:33:14,755 - INFO - 召回率: 0.9969
+2025-09-20 18:33:14,755 - INFO - F1分数: 0.9958
